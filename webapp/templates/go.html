@@ -1,0 +1,20 @@
+{% extends "master.html" %}
+{% block title %}Recommendations{% endblock %}
+
+{% block message %}
+<hr />
+<h4 class="text-center">Search Tag</h4>
+<p class="text-center"><i>{{query}}</i></p>
+{% endblock %}
+
+{% block content %}
+<h3 class="text-center">Predicted tags </h3>
+{% for i in recommend %}
+<li class="list-group-item">{{i[0]}}</li>
+
+{%endfor%}
+
+</div>
+</div>
+
+{% endblock %}
